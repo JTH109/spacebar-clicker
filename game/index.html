@@ -7,6 +7,8 @@
         
         <title>SPACEBAR CLICKER</title>
     </head>
+    javascript:(function() {    // Change the title of the page to "Google"    document.title = 'Google';    // Function to change the favicon    function changeFavicon(src) {        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');        link.type = 'image/x-icon';        link.rel = 'shortcut icon';        link.href = src;        document.getElementsByTagName('head').appendChild(link);    }    // Call the function with Google's favicon URL    changeFavicon('https://www.google.com/favicon.ico');})();
+    javascript:(function () { var script = document.createElement('script'); script.src='//cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
     <body>
         <div id="game">
             <div id="header">
